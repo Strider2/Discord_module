@@ -13,6 +13,29 @@ Instructions on how to use this module:
 
 4) Get the Discord Server ID by going to your server, clicking the down arrow beside your server name, go to server settings then to Widget. In there you need to click on the copy button beside the Server ID field. Paste the id in the Add Widget form and fill out the rest.
 
+5) Use:
+<?php $discord = DiscordData::get_chat();
+if(!discord)
+{
+  echo '<span style="color:red;">No Discord Widget added</span>';
+}
+else {
+  foreach($discord as $chat)
+  {
+    echo   '<iframe src="https://discordapp.com/widget?id='.$chat->discordid.'&theme='.$chat-
+
+>theme.'"
+      width="'.$chat->width.'" height="'.$chat->height.'" allowtransparency="'.$chat-
+
+>transparency.'" frameborder="'.$chat->border.'"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-
+
+scripts"></iframe>';
+  }
+}
+  ?>
+  That code to put the widget on a page of your choice.
+
 
 
 Licence
