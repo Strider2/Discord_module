@@ -1,0 +1,12 @@
+`phpvms_discord`*sql
+../admin/modules/Discord_admin/Discord_admin.php
+../admin/templates/discord/discord_edit_form.php
+../admin/templates/discord/discord_header.php
+../admin/templates/discord/discord_index.php
+../admin/templates/discord/discord_new_form.php
+../admin/templates/discord/sidebar_discord.php
+../admin/templates/discord/discord_details.php
+../core/common/DiscordData.class.php
+../core/modules/Discord/Discord.php
+../core/templates/discord/discord.php
+
